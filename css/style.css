@@ -147,210 +147,27 @@ button {
   margin: 0 0.5rem;
 }
 
-.menu {
-  width: 100%;
-  padding: 2rem;
-  box-sizing: border-box;
-  background-color: #2B3063;
-  height: 12rem;
-  z-index: 4;
-}
-.menu .logo {
-  width: 12rem;
-  height: auto;
-  margin: 0 auto;
-}
-.menu a {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
-  text-decoration: none;
-  margin: 0 0.8rem;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-.menu a:hover {
-  color: rgba(245, 245, 245, 0.95);
-}
-
 .hero {
   position: relative;
   width: 100%;
-  height: 900px;
-  cursor: pointer;
-  overflow: hidden;
 }
-@media screen and (max-width: 1024px) {
-  .hero {
-    height: 100vh;
-  }
-}
-.hero__title {
-  font: 900 5.6rem/6rem "Open Sans", sans-serif;
-  color: #2B3063;
-  text-transform: uppercase;
-}
-.hero__subtitle {
-  font: 400 1.6rem/3.2rem "Open Sans", sans-serif;
-  color: #3a3a3a;
-}
-.hero .overlay-h1 {
+.hero .block {
   position: absolute;
-  top: 50%;
-  left: 4rem;
-  width: 65%;
+  top: 250px;
+  left: 320px;
+  z-index: 2;
 }
-@media screen and (min-width: 1024px) {
-  .hero .overlay-h1 {
-    left: 32rem;
-    width: 40%;
-  }
-}
-.hero video {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero picture {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  filter: brightness(0.65) saturate(75%) opacity(98%) blur(4px);
   z-index: -1;
 }
-@media screen and (max-width: 1024px) {
-  .hero video {
-    height: 100vh;
-    object-fit: cover;
-  }
-}
 
-.overlay-forms {
-  position: absolute;
-  top: 12rem;
-  right: 0;
-  width: 40%;
-  padding: 2rem 1.6rem;
-  box-sizing: border-box;
-  background: rgba(43, 48, 99, 0.95);
-  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.15);
-  box-sizing: border-box;
-  z-index: 1;
-  height: 900px;
-}
-.overlay-forms form {
-  display: flex;
-  gap: 2.4rem;
-  padding: 20rem 2rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.overlay-forms form legend {
-  font: 900 2.8rem "Open Sans", sans-serif;
-  color: #ecd9a1;
-}
-.overlay-forms form input {
-  display: block;
-  width: 100%;
-  max-width: 40rem;
-  border-radius: 0.2rem;
-  border: 1px solid #fff;
-  background: transparent;
-  padding: 1.6rem;
-  min-height: 4rem;
-  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.15);
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-}
-.overlay-forms form input::placeholder {
-  color: #fff;
-  opacity: 0.6;
-}
-.overlay-forms form input[type=submit] {
-  width: 20rem;
-  border-radius: 0.4rem;
-  border: 1px solid #ecd9a1;
-  background: transparent;
-  margin-top: 2rem;
-  font-weight: 800;
-  color: #ecd9a1;
-  transition: all 0.2s ease-in-out;
-}
-.overlay-forms form input[type=submit]:hover {
-  font-weight: 600;
-  transform: scale(1.01);
-  border: 2px solid #ecd9a1;
-}
-
-@media screen and (max-width: 1024px) {
-  .overlay-forms {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    padding: 2rem 1.6rem;
-    box-sizing: border-box;
-    background: #2B3063;
-    box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.15);
-    box-sizing: border-box;
-    height: 500px;
-  }
-  .overlay-forms form {
-    display: flex;
-    gap: 20px;
-    padding: 2rem;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  .overlay-forms form input {
-    display: block;
-    width: 100%;
-    border-radius: 0.2rem;
-    border: 1px solid #fff;
-    background: transparent;
-    padding: 1.2rem 1.6rem;
-    min-height: 4rem;
-    box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.15);
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-  }
-  .overlay-forms form input::placeholder {
-    color: #fff;
-    opacity: 0.6;
-  }
-  .overlay-forms form input[type=submit] {
-    width: 20rem;
-    border-radius: 0.4rem;
-    border: 1px solid #ecd9a1;
-    background: transparent;
-    margin-top: 2rem;
-    font-weight: 800;
-    color: #ecd9a1;
-    transition: all 0.2s ease-in-out;
-  }
-  .overlay-forms form input[type=submit]:hover {
-    font-weight: 600;
-    transform: scale(1.01);
-    border: 2px solid #ecd9a1;
-  }
-}
-@media screen and (max-width: 1024px) and (min-width: 1024px) {
-  .overlay-forms form {
-    gap: 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 footer {
-  background: #222439;
+  background: #1a1a1a;
   color: #fff;
   padding: 3.2rem 2rem;
   margin-top: 5.6rem;
-  font: 300 1.4rem/2.8rem "Open Sans", sans-serif;
+  font: 300 1.4rem/2.8rem "Aspira Wide", sans-serif;
 }
 footer .flex-footer {
   display: flex;
@@ -391,9 +208,42 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Aspira Wide", sans-serif;
   background: #fff;
   overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  height: 8rem;
+  z-index: 4;
+}
+header .logo {
+  width: 12rem;
+  height: auto;
+}
+header .nav__itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20rem;
+}
+header a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  margin: 0 0.8rem;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+header a:hover {
+  color: #f9ba10;
+  font-weight: 900;
 }
 
 .container {
@@ -407,7 +257,7 @@ body {
 }
 .container__modal {
   width: 80%;
-  background-color: #2B3063;
+  background-color: #252525;
   max-width: 1280px;
   margin: 3.2rem auto;
 }
@@ -419,14 +269,14 @@ body {
 }
 .container__modal .info .fi {
   width: 100%;
-  color: #ecd9a1;
+  color: #f9ba10;
   font-size: 4rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 .container__modal .info h3 {
   color: #fff;
-  font: 500 1.4rem "Open Sans", sans-serif;
+  font: 500 1.4rem "Aspira Wide", sans-serif;
   text-align: center;
 }
 .container .btn-modal {
@@ -448,7 +298,7 @@ body {
   top: -2rem;
   left: 2rem;
   font-size: 4rem;
-  color: #2B3063;
+  color: #252525;
 }
 .container__testimonial .fi-bs-quote-right::before {
   top: 0;
@@ -459,31 +309,31 @@ body {
   border-radius: 1.6rem;
 }
 .container__testimonial .txt-comment {
-  font: 400 1.6rem/3.2rem "Open Sans", sans-serif;
-  color: #3a3a3a;
+  font: 400 1.6rem/3.2rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
 }
 .container__testimonial legend {
-  font: 500 1.4rem "Open Sans", sans-serif;
+  font: 500 1.4rem "Aspira Wide", sans-serif;
   letter-spacing: 0.1rem;
   color: rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
 }
 .container .title {
-  font: 900 4rem "Open Sans", sans-serif;
-  color: #2B3063;
+  font: 900 4rem "Aspira Wide", sans-serif;
+  color: #252525;
   text-transform: uppercase;
   width: 100%;
   margin: 2rem 0;
 }
 .container .txt-dsc {
-  font: 400 1.6rem/2.4rem "Open Sans", sans-serif;
-  color: #3a3a3a;
+  font: 400 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
   width: 80%;
   margin: 0 0;
 }
 @media screen and (max-width: 1024px) {
   .container .title {
-    font: 900 2.8rem "Open Sans", sans-serif;
+    font: 900 2.8rem "Aspira Wide", sans-serif;
     margin: 2rem 4rem;
   }
   .container .txt-dsc {
@@ -494,12 +344,12 @@ body {
 
 button {
   border: none;
-  background-color: #2B3063;
-  font: 900 1.4rem "Open Sans", sans-serif;
+  background-color: #252525;
+  font: 900 1.4rem "Aspira Wide", sans-serif;
   letter-spacing: 0.08rem;
-  padding: 0.8rem 6rem;
+  padding: 0.8rem 4rem;
   border-radius: 0.8rem;
-  color: #ecd9a1;
+  color: #f9ba10;
   margin: 2rem auto;
 }
 
@@ -515,8 +365,8 @@ button {
   margin: 0 auto;
 }
 .box h4 {
-  font: 800 1.6rem "Open Sans", sans-serif;
-  color: #2B3063;
+  font: 800 1.6rem "Aspira Wide", sans-serif;
+  color: #252525;
 }
 .box .box-questions {
   display: flex;
@@ -532,8 +382,8 @@ button {
 }
 .box .fi-br-angle-small-down {
   font-size: 2rem;
-  color: #2B3063;
-  transition: all 0.2s ease-in-out;
+  color: #252525;
+  transition: all 0.25s ease-in;
 }
 .box .fi-br-angle-small-down.active {
   transform: rotate(180deg);
@@ -542,7 +392,7 @@ button {
 .response {
   display: none;
   visibility: hidden;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in;
   padding: 1.2rem 0;
 }
 .response.active {
@@ -552,12 +402,12 @@ button {
   margin: 0 auto;
   text-align: center;
   visibility: visible;
-  font: 500 1.4rem "Open Sans", sans-serif;
-  color: #3a3a3a;
+  font: 500 1.4rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
 }
 
 a {
-  font: 500 1.4rem "Open Sans", sans-serif;
+  font: 500 1.4rem "Aspira Wide", sans-serif;
   color: #fff;
   text-decoration: none;
 }
