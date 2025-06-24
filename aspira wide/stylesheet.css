@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Black.eot');
+    src: local('Aspira Wide Black'), local('AspiraWide-Black'),
+        url('AspiraWide-Black.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Black.woff2') format('woff2'),
+        url('AspiraWide-Black.woff') format('woff'),
+        url('AspiraWide-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Light.eot');
+    src: local('Aspira Wide Light'), local('AspiraWide-Light'),
+        url('AspiraWide-Light.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Light.woff2') format('woff2'),
+        url('AspiraWide-Light.woff') format('woff'),
+        url('AspiraWide-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Heavy.eot');
+    src: local('Aspira Wide Heavy'), local('AspiraWide-Heavy'),
+        url('AspiraWide-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Heavy.woff2') format('woff2'),
+        url('AspiraWide-Heavy.woff') format('woff'),
+        url('AspiraWide-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-BlackIt.eot');
+    src: local('Aspira Wide Black Italic'), local('AspiraWide-BlackIt'),
+        url('AspiraWide-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-BlackIt.woff2') format('woff2'),
+        url('AspiraWide-BlackIt.woff') format('woff'),
+        url('AspiraWide-BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-It.eot');
+    src: local('Aspira Wide Italic'), local('AspiraWide-It'),
+        url('AspiraWide-It.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-It.woff2') format('woff2'),
+        url('AspiraWide-It.woff') format('woff'),
+        url('AspiraWide-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-DemiIt.eot');
+    src: local('Aspira Wide Demi Italic'), local('AspiraWide-DemiIt'),
+        url('AspiraWide-DemiIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-DemiIt.woff2') format('woff2'),
+        url('AspiraWide-DemiIt.woff') format('woff'),
+        url('AspiraWide-DemiIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-MediumIt.eot');
+    src: local('Aspira Wide Medium Italic'), local('AspiraWide-MediumIt'),
+        url('AspiraWide-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-MediumIt.woff2') format('woff2'),
+        url('AspiraWide-MediumIt.woff') format('woff'),
+        url('AspiraWide-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-LightIt.eot');
+    src: local('Aspira Wide Light Italic'), local('AspiraWide-LightIt'),
+        url('AspiraWide-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-LightIt.woff2') format('woff2'),
+        url('AspiraWide-LightIt.woff') format('woff'),
+        url('AspiraWide-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-ThinIt.eot');
+    src: local('Aspira Wide Thin Italic'), local('AspiraWide-ThinIt'),
+        url('AspiraWide-ThinIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-ThinIt.woff2') format('woff2'),
+        url('AspiraWide-ThinIt.woff') format('woff'),
+        url('AspiraWide-ThinIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Regular.eot');
+    src: local('Aspira Wide'), local('AspiraWide-Regular'),
+        url('AspiraWide-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Regular.woff2') format('woff2'),
+        url('AspiraWide-Regular.woff') format('woff'),
+        url('AspiraWide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Bold.eot');
+    src: local('Aspira Wide Bold'), local('AspiraWide-Bold'),
+        url('AspiraWide-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Bold.woff2') format('woff2'),
+        url('AspiraWide-Bold.woff') format('woff'),
+        url('AspiraWide-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Demi.eot');
+    src: local('Aspira Wide Demi'), local('AspiraWide-Demi'),
+        url('AspiraWide-Demi.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Demi.woff2') format('woff2'),
+        url('AspiraWide-Demi.woff') format('woff'),
+        url('AspiraWide-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-HeavyIt.eot');
+    src: local('Aspira Wide Heavy Italic'), local('AspiraWide-HeavyIt'),
+        url('AspiraWide-HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-HeavyIt.woff2') format('woff2'),
+        url('AspiraWide-HeavyIt.woff') format('woff'),
+        url('AspiraWide-HeavyIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Medium.eot');
+    src: local('Aspira Wide Medium'), local('AspiraWide-Medium'),
+        url('AspiraWide-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Medium.woff2') format('woff2'),
+        url('AspiraWide-Medium.woff') format('woff'),
+        url('AspiraWide-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-BoldIt.eot');
+    src: local('Aspira Wide Bold Italic'), local('AspiraWide-BoldIt'),
+        url('AspiraWide-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-BoldIt.woff2') format('woff2'),
+        url('AspiraWide-BoldIt.woff') format('woff'),
+        url('AspiraWide-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspira Wide';
+    src: url('AspiraWide-Thin.eot');
+    src: local('Aspira Wide Thin'), local('AspiraWide-Thin'),
+        url('AspiraWide-Thin.eot?#iefix') format('embedded-opentype'),
+        url('AspiraWide-Thin.woff2') format('woff2'),
+        url('AspiraWide-Thin.woff') format('woff'),
+        url('AspiraWide-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

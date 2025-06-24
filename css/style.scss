@@ -1,0 +1,203 @@
+@use 'variable.scss' as c;
+@use 'reset.scss';
+@use 'flexbox.scss';
+@use 'header.scss';
+@use 'hero.scss';
+@use 'footer.scss';
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+}
+body{
+    font-family: c.$ff;
+    background: c.$bg;
+    overflow-x: hidden;
+}
+
+.container{
+    width:100%;
+    padding:2rem 0;
+    max-width:1280px;
+    margin: 0 auto;
+    &__infos:nth-child(2){
+        margin-left:2rem;
+    }
+    &__modal{        
+        width:80%;
+        background-color: c.$principal;
+        max-width:1280px;
+        margin: 3.2rem auto;
+        .info{
+            padding:4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center; // centraliza horizontalmente os filhos, incluindo .fi
+            .fi{
+                width: 100%;
+                color: c.$secondary;
+                font-size: 4rem;
+                margin-bottom:2rem;
+                text-align: center; // centraliza o texto dentro do elemento
+            }
+            h3{
+                color: c.$bg;
+                font: c.$ff-dsc;
+                text-align:center;
+            }
+        }
+    }
+    .btn-modal{
+        width:26rem;
+        margin:2rem auto;
+        display:block;
+    }
+    &__testimonial{
+        position:relative;
+        width:60%;
+        margin: 2rem auto;
+        display:block;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1rem;
+        padding: 4rem;
+        .fi-bs-quote-right{
+            position: absolute;
+            top: -2rem;
+            left:2rem;
+            font-size: 4rem;
+            color: c.$principal;
+            &::before{
+                top: 0;
+                left: 0;
+                width: 300px;
+                height: 100%;
+                background-color: c.$bgTw;
+                border-radius: 1.6rem;
+            }
+        }
+        .txt-comment{
+            font: c.$ff-dsc-hm;
+            color: c.$txtColor;
+        }
+        legend{
+            font:c.$ff-dsc;
+            letter-spacing: .1rem;
+            color: rgba(0,0,0,.2);
+            margin-top:2rem;
+        }
+    }
+    .title{
+        font: c.$ff-h1-mm;
+        color: c.$principal;
+        text-transform: uppercase;
+        width:100%;
+        margin: 2rem 0;
+    }
+    .txt-dsc{
+        font: c.$ff-dsc-mm;
+        color: c.$txtColor;
+        width:80%;
+        margin: 0 0;
+    }
+    @media screen and (max-width: 1024px) {
+        .title{
+            font: c.$ff-h1-sm;
+            margin: 2rem 4rem;
+        }
+        .txt-dsc{
+            width:100%;
+            margin: 0 4rem;
+        }
+    }
+}
+
+button{
+    border:none;
+    background-color: c.$principal;
+    font:c.$ff-btn;
+    letter-spacing: c.$ff-spacing-dsc;
+    padding: .8rem 6rem;
+    border-radius: .8rem;
+    color:c.$secondary;
+    margin:2rem auto;
+}
+.faq{
+    text-align:center;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    max-width:1280px;
+    margin: 0 auto;
+    h4{
+        font: c.$ff-st;
+        color: c.$principal;
+    }
+    .box-questions{
+        display:flex;
+        justify-content: space-between;
+        width:62rem;
+        margin:1.2rem auto;
+        padding: 2rem;
+        display:flex;
+        border: none;
+        box-shadow: c.$shadow-box;
+        border-radius: 1rem;
+        cursor:pointer;
+    }
+    .fi-br-angle-small-down{
+        font-size:2rem;
+        color: c.$principal;
+        transition: c.$transition;
+        &.active{
+            transform: rotate(180deg);
+        }
+    }
+}
+.response{
+    display:none;
+    visibility:hidden;
+    transition:c.$transition;
+    padding: 1.2rem 0;
+        &.active{
+        display:flex;
+        flex-direction: column;
+        width:500px;
+        margin: 0 auto;
+        text-align:center;
+        visibility:visible;
+        font: c.$ff-dsc;
+        color: c.$txtColor;
+    }
+}
+
+a{
+    font: c.$ff-dsc;
+    color:c.$bg;
+    text-decoration:none;
+}
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 4rem;
+    right: 32rem;
+    z-index: 1000;
+    background: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    width: 5.2rem;
+    height: 5.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s;
+    text-decoration: none;
+}
+.whatsapp-fixed:hover {
+    background: #1ebe5d;
+}
+
+
+
