@@ -3,40 +3,70 @@
 footer{
     background: c.$principal-h;
     color: c.$bg;
-    padding: 3.2rem 2rem;
-    margin-top:5.6rem;
+    padding: 2.4rem 2rem;
     font: 300 1.4rem/2.8rem c.$ff;
-    .flex-footer{
+    img{
+        height:8rem;
+        width:auto;
+    }
+    .foot{
         display:flex;
-        flex-direction:column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap:wrap;
-        @media screen and (min-width: 1024px) {
-            flex-direction: row;
+        &__tel{
+            display:flex;
             justify-content: space-between;
-            align-items:start;
+            align-items:center;
+            flex-wrap:nowrap;
+        }
+        strong{
+            font-weight:900;
+            color:c.$secondary;
+            transition:c.$transition;
+            &:hover{
+                color:c.$secondary-h;
+            }
         }
     }
+    
+    .txt__white{
+        letter-spacing:4px;
+    }
     div{
-        margin-bottom:1.6rem;
-
         a{
-            font-size:1.6rem;
-            margin:0 1.6rem;
+            font-size:1.4rem;
             color:c.$bg;
+            transition:c.$transition;
+            &:hover{
+                color:c.$txtColor;
+            }
         } 
         p{
             font-size:1.4rem;
-        }
-        h5{
-            font-weight:800;
         }
         i{
             font-size:2rem;
             margin-right:2rem;
         }
     }
-   
+    @media screen and (max-width: 1024px) {
+        img{
+            height:6.4rem;
+        }
+        .foot{
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap:2rem;
+        }
+        .txt__white{
+            letter-spacing:1px;
+            font:300 1.4rem/1.5rem c.$ff;
+            text-align:center;
+
+        }
+    }
     
 }

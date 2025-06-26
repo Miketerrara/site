@@ -187,7 +187,7 @@ button {
     width: 280px;
   }
   .hero__title {
-    font: 900 4rem "Aspira Wide", sans-serif;
+    font: 900 3.2rem "Aspira Wide", sans-serif;
   }
   .hero__txt {
     font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
@@ -197,41 +197,67 @@ button {
 footer {
   background: #1a1a1a;
   color: #fff;
-  padding: 3.2rem 2rem;
-  margin-top: 5.6rem;
+  padding: 2.4rem 2rem;
   font: 300 1.4rem/2.8rem "Aspira Wide", sans-serif;
 }
-footer .flex-footer {
+footer img {
+  height: 8rem;
+  width: auto;
+}
+footer .foot {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1024px) {
-  footer .flex-footer {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  }
+footer .foot__tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-footer div {
-  margin-bottom: 1.6rem;
+footer .foot strong {
+  font-weight: 900;
+  color: #f9ba10;
+  transition: all 0.25s ease-in;
+}
+footer .foot strong:hover {
+  color: #dbaf38;
+}
+footer .txt__white {
+  letter-spacing: 4px;
 }
 footer div a {
-  font-size: 1.6rem;
-  margin: 0 1.6rem;
+  font-size: 1.4rem;
   color: #fff;
+  transition: all 0.25s ease-in;
+}
+footer div a:hover {
+  color: #5c5c5c;
 }
 footer div p {
   font-size: 1.4rem;
 }
-footer div h5 {
-  font-weight: 800;
-}
 footer div i {
   font-size: 2rem;
   margin-right: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  footer img {
+    height: 6.4rem;
+  }
+  footer .foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  footer .txt__white {
+    letter-spacing: 1px;
+    font: 300 1.4rem/1.5rem "Aspira Wide", sans-serif;
+    text-align: center;
+  }
 }
 
 html {
@@ -276,10 +302,67 @@ header a:hover {
   color: #f9ba10;
   font-weight: 900;
 }
+header .toggle {
+  display: none;
+}
+header .menu-toggle {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   header .nav__itens {
     display: none;
   }
+  header .toggle {
+    display: block;
+    color: #f9ba10;
+    font-size: 4rem;
+    float: right;
+    margin-right: 2rem;
+    position: relative;
+  }
+  header .menu-toggle {
+    display: none;
+  }
+  header .menu-toggle--active {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(60deg, #ffd052, #ffe6a2);
+    top: 0;
+    z-index: 999;
+  }
+  header .menu-toggle__position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header .menu-toggle__itens {
+    font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
+    font-weight: 500;
+    color: #5c5c5c;
+    text-align: center;
+    margin: 3.2rem 0;
+    letter-spacing: 1px;
+  }
+}
+
+.title {
+  font: 900 4.8rem "Aspira Wide", sans-serif;
+  color: #252525;
+}
+.title__equipment {
+  text-align: center;
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
+  letter-spacing: 3px;
+  margin: 4rem 0 2rem;
+}
+.title__faq {
+  text-align: center;
+  font: 900 4.8rem "Aspira Wide", sans-serif;
+  color: #252525;
 }
 
 .container {
@@ -299,6 +382,13 @@ header a:hover {
   align-items: flex-start;
   width: 100%;
 }
+.container__project .sup {
+  font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
+  color: #f9ba10;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 .container__descriptive {
   flex: 1 1 30rem;
 }
@@ -307,32 +397,123 @@ header a:hover {
   flex: 2 1 70rem;
   height: 41rem;
 }
-.container .sup {
+.container__presentation .project__photo--over {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  z-index: 2;
+  user-select: none;
+}
+.container__presentation .project__photo--over img {
+  width: 20rem;
+  height: 36rem;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.container__presentation .project__photos {
+  z-index: 0;
+  position: relative;
+  float: right;
+  width: 70rem;
+  height: 41rem;
+}
+.container__presentation .project__photos .project__txt {
+  position: absolute;
+  bottom: 4rem;
+  left: 6rem;
+  z-index: 2;
+}
+.container__presentation .project__photos .project__txt h3 {
+  font: 900 2.8rem/3.6rem "Aspira Wide", sans-serif;
+  color: #f9ba10;
+  font-weight: 900;
+}
+.container__presentation .project__photos .project__txt p {
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  color: #fff;
+}
+.container__presentation .project__photos .project__txt h4 {
   font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
   color: #f9ba10;
-  font-weight: 200;
-  text-transform: uppercase;
-  letter-spacing: 5px;
 }
-.container .title {
-  font: 900 4.8rem "Aspira Wide", sans-serif;
+.container__presentation .project__photos .slider {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  cursor: pointer;
+}
+.container__presentation .project__photos .slider .fi-ts-angle-small-left, .container__presentation .project__photos .slider .fi-ts-angle-small-right {
   color: #252525;
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  padding-bottom: 0;
+  cursor: pointer;
 }
-.container .title__equipment {
-  text-align: center;
-  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
-  color: #5c5c5c;
-  letter-spacing: 3px;
-  margin: 4rem 0 2rem;
+.container__presentation .project__photos .slider .fi-ts-angle-small-left:hover, .container__presentation .project__photos .slider .fi-ts-angle-small-right:hover {
+  background-color: #F9F9FF;
+}
+.container__presentation .project__photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px) brightness(0.5);
+  transition: all 0.25s ease-in;
+}
+.container__presentation .project__photos img:hover {
+  filter: blur(0) brightness(0.8);
+}
+.container__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .container {
     padding: 2rem;
     box-sizing: border-box;
   }
-  .container .title {
-    font: 900 4rem "Aspira Wide", sans-serif;
-    margin: 2rem 4rem;
+  .container__project {
+    margin-top: 5rem;
+    flex-wrap: wrap;
+  }
+  .container__project .sup {
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  .container__descriptive {
+    flex: 1 1 100%;
+  }
+  .container__descriptive .title {
+    margin: 0;
+    padding: 0;
+  }
+  .container__presentation {
+    flex: 1 1 100%;
+    height: 28rem;
+  }
+  .container__presentation .project__photo--over {
+    display: none;
+  }
+  .container__presentation .project__photos {
+    width: 100%;
+    height: 28rem;
+  }
+  .container__presentation .project__photos img {
+    height: 100%;
+    width: 100%;
+  }
+  .container__presentation .project__photos .project__txt {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .container__presentation .project__photos .project__txt h3, .container__presentation .project__photos .project__txt p, .container__presentation .project__photos .project__txt h4 {
+    text-align: center;
+  }
+  .container__form {
+    flex-direction: column;
   }
 }
 
@@ -359,7 +540,7 @@ header a:hover {
 .line-equipment .box-equipment__foto {
   width: 100%;
   height: 24rem;
-  object-fit: contain;
+  object-fit: cover;
   object-position: 50% 50%;
 }
 .line-equipment .box-equipment__footer {
@@ -389,6 +570,11 @@ header a:hover {
 .line-equipment .box-equipment__footer-dsc .fi {
   color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .line-equipment {
+    justify-content: center;
+  }
+}
 
 .link__complete {
   color: #252525;
@@ -397,74 +583,8 @@ header a:hover {
   margin-top: 1.2rem;
 }
 
-.project__photo--over {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-  z-index: 2;
-  user-select: none;
-}
-.project__photo--over img {
-  width: 20rem;
-  height: 36rem;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-.project__photos {
-  z-index: 0;
-  position: relative;
-  float: right;
-  width: 70rem;
-  height: 41rem;
-}
-.project__photos .slider {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  cursor: pointer;
-}
-.project__photos .slider .fi-ts-angle-small-left, .project__photos .slider .fi-ts-angle-small-right {
-  color: #252525;
-  font-size: 2rem;
-  background-color: #fff;
-  padding: 1rem;
-  padding-bottom: 0;
-  cursor: pointer;
-}
-.project__photos .slider .fi-ts-angle-small-left:hover, .project__photos .slider .fi-ts-angle-small-right:hover {
-  background-color: #F9F9FF;
-}
-.project__photos img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(1px) brightness(0.5);
-  transition: all 0.25s ease-in;
-}
-.project__photos img:hover {
-  filter: blur(0) brightness(0.8);
-}
-
-.project__txt {
-  position: absolute;
-  bottom: 4rem;
-  left: 6rem;
-  z-index: 2;
-}
-.project__txt h3 {
-  font: 900 2.8rem/3.6rem "Aspira Wide", sans-serif;
-  color: #f9ba10;
-  font-weight: 900;
-}
-.project__txt p {
-  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
-  color: #fff;
-}
-.project__txt h4 {
-  font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
-  color: #f9ba10;
+.hide-first {
+  display: block;
 }
 
 .txt {
@@ -552,11 +672,19 @@ header a:hover {
   transform: scale(1.02);
 }
 .boxes .box__title {
-  font: 900 4rem "Aspira Wide", sans-serif;
+  font: 900 3.2rem "Aspira Wide", sans-serif;
   color: #5c5c5c;
 }
 .boxes .box:hover {
   box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.2);
+}
+@media screen and (max-width: 1024px) {
+  .boxes {
+    flex-wrap: wrap;
+  }
+  .boxes .box {
+    width: 100%;
+  }
 }
 
 #clientes {
@@ -603,7 +731,7 @@ header a:hover {
   rotate: -90deg;
   z-index: 1;
 }
-#clientes .cliente img {
+#clientes .cliente__photo {
   width: 100%;
   height: 100%;
   filter: brightness(0.3);
@@ -612,9 +740,76 @@ header a:hover {
   z-index: 0;
   transition: all 0.25s ease-in;
 }
-#clientes .cliente img:hover {
+#clientes .cliente__photo:hover {
   filter: brightness(1);
   transform: scale(1.05);
+}
+@media screen and (max-width: 1024px) {
+  #clientes .cliente {
+    width: 100%;
+    height: 48rem;
+    padding: 2rem 3.2rem;
+    box-sizing: border-box;
+  }
+  #clientes .cliente__category, #clientes .cliente__name {
+    visibility: hidden;
+  }
+  #clientes .cliente__photo:hover {
+    filter: brightness(0.3);
+    transform: scale(1);
+  }
+}
+
+.box-faq {
+  display: block;
+  border: 0 solid transparent;
+  border-radius: 2rem;
+  background-color: #252525;
+  width: 63rem;
+  height: 5.2rem;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+.box-faq .fi {
+  font-size: 2rem;
+  color: #fff;
+}
+.box-faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2rem;
+}
+.box-faq__response {
+  display: none;
+  visibility: hidden;
+  transition: all 0.25s ease-in;
+  padding: 1.2rem 0;
+}
+.box-faq__response--active {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  visibility: visible;
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
+}
+.box-faq .faq {
+  color: #fff;
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  margin-right: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .box-faq {
+    width: 100%;
+    height: 8rem;
+  }
+  .box-faq .faq {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 }
 
 button {
@@ -629,25 +824,50 @@ button {
   margin: 2rem auto;
 }
 
-.faq {
-  text-align: center;
+.dsc-contato {
+  flex: 5 1 32rem;
 }
 
-.response {
-  display: none;
-  visibility: hidden;
-  transition: all 0.25s ease-in;
-  padding: 1.2rem 0;
+.form {
+  flex: 7 1 70rem;
+  margin-left: 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(60deg, #ffd052, #ffe6a2);
 }
-.response.active {
+.form form {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  visibility: visible;
+  margin: 5.2rem 10rem;
+}
+.form form fieldset {
+  margin: 1rem 0;
+}
+.form form fieldset label {
   font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
-  color: #5c5c5c;
+  color: #252525;
+  margin-bottom: 0.4rem;
+}
+.form form fieldset input {
+  padding: 1rem 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form form fieldset input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-family: "Aspira Wide", sans-serif;
+}
+.form form .submit {
+  width: 24rem;
+  padding: 0.8rem;
+  background-color: #252525;
+  color: #fff;
+  border: 0px solid transparent;
+  border-radius: 0.4rem;
+  outline: none;
+  margin-top: 2rem;
 }
 
 a {
@@ -655,11 +875,116 @@ a {
   color: #fff;
   text-decoration: none;
 }
+a:visited {
+  text-decoration: underline;
+  color: #5c5c5c;
+}
+
+.modal {
+  display: none;
+}
+.modal__img {
+  flex: 1 1 52rem;
+  height: 100%;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.2);
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+.modal__img #item {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+.modal__img .slider {
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.modal__img .slider .fi {
+  margin: 1rem 0;
+  color: #5c5c5c;
+}
+.modal__img .nxt-image {
+  position: absolute;
+  bottom: 12rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #5c5c5c;
+  cursor: pointer;
+}
+.modal__infos {
+  flex: 1 1 50rem;
+  margin: 3.2rem 4.8rem;
+}
+.modal__infos .title {
+  font-size: 4rem;
+}
+.modal__infos .title__dsc {
+  font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
+  letter-spacing: 3px;
+  color: #5c5c5c;
+}
+.modal__infos .title__qtde {
+  font: 900 3.2rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
+  margin-right: 2rem;
+}
+.modal__infos .txt {
+  letter-spacing: 1px;
+  color: #5c5c5c;
+}
+.modal__infos ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 2rem;
+}
+.modal__infos ul li {
+  margin: 2rem 0;
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  color: #5c5c5c;
+}
+.modal__infos .qtde {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.modal__infos .qtde input {
+  outline: none;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  background-color: #F9F9FF;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  text-align: right;
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+}
+.modal--active {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100.6rem;
+  height: 83rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.2);
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
 
 .whatsapp-fixed {
   position: fixed;
   bottom: 4rem;
-  right: 32rem;
+  right: 20rem;
   z-index: 1000;
   background: #25d366;
   color: #fff;
@@ -669,14 +994,59 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.8rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: background 0.2s;
   text-decoration: none;
+  animation: wpp 5s ease-in-out 0s infinite alternate;
+  transition: all 0.25s ease-in;
 }
-
+.whatsapp-fixed a {
+  font-size: 2.8rem;
+}
 .whatsapp-fixed:hover {
   background: #1ebe5d;
+}
+
+@keyframes wpp {
+  from {
+    bottom: 8rem;
+  }
+  to {
+    bottom: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    font: 900 3.2rem "Aspira Wide", sans-serif;
+  }
+  .link__complete {
+    text-align: center;
+    float: none;
+  }
+  .hide-first {
+    display: none;
+  }
+  .dsc-contato {
+    flex: 1 1 100%;
+  }
+  .form {
+    flex: 1 1 100%;
+    margin: 2rem 0;
+    margin-left: 0;
+  }
+  .form form {
+    margin: 2rem;
+  }
+  .form form .submit {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  .whatsapp-fixed {
+    bottom: 8rem;
+    right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
