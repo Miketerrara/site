@@ -768,48 +768,60 @@ header .menu-toggle {
   width: 63rem;
   height: 5.2rem;
   margin: 2rem auto;
-  cursor: pointer;
 }
-.box-faq .fi {
-  font-size: 2rem;
-  color: #fff;
-}
-.box-faq__question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.6rem 2rem;
-}
-.box-faq__response {
-  display: none;
-  visibility: hidden;
-  transition: all 0.25s ease-in;
-  padding: 1.2rem 0;
-}
-.box-faq__response--active {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  visibility: visible;
-  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
-  color: #5c5c5c;
-}
-.box-faq .faq {
-  color: #fff;
-  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
-  margin-right: 2rem;
+.box-faq--active {
+  display: block;
+  border: 0 solid transparent;
+  border-radius: 2rem;
+  background-color: #252525;
+  width: 63rem;
+  height: 12rem;
+  margin: 2rem auto;
 }
 @media screen and (max-width: 1024px) {
   .box-faq {
     width: 100%;
     height: 8rem;
   }
-  .box-faq .faq {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-  }
+}
+
+.box-faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2rem;
+  z-index: 1000;
+  cursor: pionter;
+}
+.box-faq__question .faq {
+  color: #fff;
+  font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
+  margin-right: 2rem;
+}
+.box-faq__question .fi {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.response {
+  display: none;
+  transition: all 0.25s ease-in;
+  padding: 1.2rem 0;
+}
+.response--active {
+  margin: 0 2rem;
+  text-align: left;
+  font: 200 1.2rem/1.6rem "Aspira Wide", sans-serif;
+  color: #fff;
+  z-index: -1;
+}
+.response--active a {
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+}
+.response--active a:visited {
+  color: inherit;
 }
 
 button {
@@ -1028,6 +1040,10 @@ a:visited {
   }
   .dsc-contato {
     flex: 1 1 100%;
+  }
+  .faq {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
   }
   .form {
     flex: 1 1 100%;
