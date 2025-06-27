@@ -319,9 +319,17 @@ header .menu-toggle {
     float: right;
     margin-right: 2rem;
     position: relative;
+    cursor: pointer;
   }
   header .menu-toggle {
     display: none;
+  }
+  header .menu-toggle .cross {
+    position: absolute;
+    top: 3.2rem;
+    right: 3.2rem;
+    font-size: 3.2rem;
+    color: #5c5c5c;
   }
   header .menu-toggle--active {
     display: block;
@@ -343,7 +351,7 @@ header .menu-toggle {
     font-weight: 500;
     color: #5c5c5c;
     text-align: center;
-    margin: 3.2rem 0;
+    margin: 1rem 0;
     letter-spacing: 1px;
   }
 }
@@ -798,7 +806,7 @@ header .menu-toggle {
   font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
   margin-right: 2rem;
 }
-.box-faq__question .fi {
+.box-faq__question .fi-ts-angle-small-down {
   font-size: 2rem;
   color: #fff;
 }
@@ -806,9 +814,9 @@ header .menu-toggle {
 .response {
   display: none;
   transition: all 0.25s ease-in;
-  padding: 1.2rem 0;
 }
 .response--active {
+  display: block;
   margin: 0 2rem;
   text-align: left;
   font: 200 1.2rem/1.6rem "Aspira Wide", sans-serif;
