@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="./sources/favicon-64x.png" sizes="64px" type="image/x-icon">
     <link rel="shortcut icon" href="./sources/favicon-8x.png" sizes="8px" type="image/x-icon">
     <link rel='stylesheet' href='./node_modules/@flaticon/flaticon-uicons/css/all/all.css'>
+    <link rel='stylesheet' href='./css/bootstrap.min.css'>
     <title>Studio Be</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./aspira wide/stylesheet.css">
@@ -74,21 +75,40 @@
                             Projetamos o layout seguindo a planta do local para extrair o máximo de equipamentos por m², assim mais moradores poderão aproveitar os seus treinos com mais rapidez e comodidade dentro do seu condomínio.
                         </p>
                     </div>
-                    <div class="container__presentation">
-                        <div class="project__photo--over">
-                            <img src="./sources/project-3d/projeto-academia_02.png" alt="">
-                        </div>
+                    <div class="container__presentation">                        
                         <div class="project__photos">
-                            <div class="slider">
-                                <i class="fi fi-ts-angle-small-left"></i>
-                                <i class="fi fi-ts-angle-small-right"></i>                                
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>                                    
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="/sources/project-3d/projeto-academia_07.png" class="d-block w-100" alt="Academia Paulínia">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Condomínio Paulínia</h5>
+                                            <p>2 áreas - 40m²</p>
+                                            <h6>14 Máquinas + área livre</h6>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./sources/project-3d/projeto-academia_06.png" class="d-block w-100" alt="Academia Campinas">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Academia Campinas</h5>
+                                            <p>1 Área - 45m²</p>
+                                            <h6>10 Máquinas + área livre</h6>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <div class="project__txt">
-                                <h3>Condomínio de Paulínia</h3>
-                                <p>2 áreas - 40m²</p>
-                                <h4>14 Máquinas + peso livre</h4>
-                            </div>
-                            <img src="./sources/project-3d/projeto-academia_07.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -117,31 +137,26 @@
         </section>
         <section id="clientes">
             <div class="cliente">
-                <img src="./sources/zoom-in-07.svg" class="zoom-in" alt="">
                 <h4 class="cliente__name">Fabaiana Belai, Campinas</h4>
                 <h4 class="cliente__category">Locação de máquinas</h4>
                 <img src="./sources/academia-fabiana-belai.JPEG" class="cliente__photo" alt="Fabiana Belai">
             </div>
             <div class="cliente">
-                <img src="./sources/zoom-in-07.svg" class="zoom-in" alt="">
                 <h4 class="cliente__name">Don Nery, Campinas</h4>
                 <h4 class="cliente__category">Locação de máquinas</h4>
                 <img src="./sources/academia-don-nery.jpeg" class="cliente__photo" alt="Don Nery">
             </div>
             <div class="cliente">
-                <img src="./sources/zoom-in-07.svg" class="zoom-in" alt="">
                 <h4 class="cliente__name">Maria Villac, Campinas</h4>
                 <h4 class="cliente__category">Locação de máquinas</h4>
                 <img src="./sources/academia-maria-villac.jpeg" class="cliente__photo" alt="Maria Villac">
             </div>
             <div class="cliente">
-                <img src="./sources/zoom-in-07.svg" class="zoom-in" alt="">
                 <h4 class="cliente__name">Villeneuve, Campinas</h4>
                 <h4 class="cliente__category">Locação de máquinas</h4>
                 <img src="./sources/academia-villeneuve.jpeg" class="cliente__photo" alt="Villeneuve">
             </div>
             <div class="cliente">
-                <img src="./sources/zoom-in-07.svg" class="zoom-in" alt="">
                 <h4 class="cliente__name">Singenta, Campinas</h4>
                 <h4 class="cliente__category">Locação de máquinas</h4>
                 <img src="./sources/academia-singenta.jpeg" class="cliente__photo" alt="Singenta">
@@ -214,14 +229,14 @@
                         </div>
                     </div>
                 </div>
-                <a href="/all-plans.html" target="_blank" ><p class="link__complete">Ver todos os planos...</p></a>
+                <a id="open-md-planos" href="#"><p class="link__complete">Ver todos os planos...</p></a>
             </div>
         </section>
         <section id="equipamentos">
             <div class="container">
                 <h3 class="title">Preparado para<br> os equipamentos?</h3>
                 <h4 class="title__equipment">Linha Alfa TX</h4>
-                <div class="line-equipment">
+                <div class="line-equipment" id="l01">
                     <div class="box-equipment ">
                         <img src="./sources/Máquinas Alfa/IMG-20250328-WA0040.jpg" alt="Abdutora" class="box-equipment__foto">
                         <div class="box-equipment__footer">
@@ -279,10 +294,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="/complete-line.html" target="_blank"><p class="link__complete">Ver linha completa...</p></a>
+                <a href="complete-line-tx.html" target="_self"><p class="link__complete">Ver linha completa...</p></a>
                 <h4 class="title__equipment">Linha Alfa SX</h4>
-                <div class="line-equipment">
-                    <div class="box-equipment ">
+                <div class="line-equipment" id="l02">
+                    <div class="box-equipment">
                         <img src="./sources/Máquinas Alfa/IMG-20250328-WA0094.jpg" alt="Supino Vertical" class="box-equipment__foto">
                         <div class="box-equipment__footer">
                             <h4 class="box-equipment__footer-title">Supino Vertical</h4>
@@ -339,9 +354,9 @@
                         </div>
                     </div>
                 </div>
-                <a href="/complete-line.html" target="_blank"><p class="link__complete">Ver linha completa</p></a>
+                <a href="complete-line-sx.html" target="_self"><p class="link__complete">Ver linha completa</p></a>
                 <h4 class="title__equipment">Linha Sigma (MacSport)</h4>
-                <div class="line-equipment">
+                <div class="line-equipment" id="l03">
                     <div class="box-equipment ">
                         <img src="./sources/maquinas-sigma/Panturilha-com-Agachamento-_1_-min-_2_-min.png" alt="Panturilha c/ agachamento" class="box-equipment__foto">
                         <div class="box-equipment__footer">
@@ -399,7 +414,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="/complete-line.html" target="_blank"><p class="link__complete">Ver linha completa</p></a>
+                <a href="complete-line-sigma.html" target="_self"><p class="link__complete">Ver linha completa</p></a>
             </div>
         </section>
         <section>
@@ -462,43 +477,520 @@
                 </div>                
             </div>
         </section>
-        <div class="modal">
-            <div class="modal__img">                
-                <img src="./sources/Máquinas Alfa/recortadas/TX1025.png" alt="Cadeira Extensora" id="item">
-                <div class="slider">
-                    <i class="fi fi-ss-circle"></i>
-                    <i class="fi fi-br-circle"></i>
+        <section id="modal">
+            <div class="modal" id="m01">                
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/abdutora.png" alt="Banco Abdutor" id="item">                    
                 </div>
-                <i class="fi fi-rr-arrow-right nxt-image"></i>
-                <div class="modal__img--nextimage">
-                    <img src="" alt="">
+                <div class="modal__infos">
+                    <h3 class="title">Cadeira Abdutora</h3>
+                    <h4 class="title__dsc">Linha Alfa TX - TX1052</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça da carenagem em rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button" class="modal__infos--btn">Fale com um consultor</button>
+                    </a>
                 </div>
             </div>
-            <div class="modal__infos">
-                <h3 class="title">Cadeira Extensora</h3>
-                <h4 class="title__dsc">Linha Alfa TX - TX1015 - EP</h4>
-                <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino. Tudo isso e mais:</p>
-                <ul>
-                    <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
-                    <li class="list__bullet">Sistema de ajuste Rapid Fire;</li>
-                    <li class="list__bullet">Ajuste com indicação numérica;</li>
-                    <li class="list__bullet">Encosto pantográfico.</li>
-                </ul>
-                <div class="qtde">
-                    <h3 class="title__qtde">Qtde</h3>
-                    <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+            <div class="modal" id="m02">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/adutora-e-abdutora.png" alt="Cadeira Adutora e abdutora" id="item">
                 </div>
-                <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
-                    <button type="button">Consulte um consultor</button>
-                </a>
+                <div class="modal__infos">
+                    <h3 class="title">Cadeira Adutora e Abdutora</h3>
+                    <h4 class="title__dsc">Linha Alfa TX - TX1054</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça da carenagem em rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="whatsapp-fixed">
-            <a href="https://wa.me/5519988773344?text=Olá%20tudo%20bem?%20Gostaria%20de%20saber%20quais%20são%20os%20seus%20planos%20disponíveis?" target="_blank">
-                <i class="fi fi-brands-whatsapp"></i>
-            </a>
-        </div>
+            <div class="modal" id="m03">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/TX1025.png" alt="Cadeira Extensora" id="item">
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Cadeira Extensora</h3>
+                    <h4 class="title__dsc">Linha Alfa TX - TX1015 - EP</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Sistema de ajuste Rapid Fire;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m04">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/flexora-vertical.png" alt="Flexora Vertical" id="item">                    
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Flexora Vertical</h3>
+                    <h4 class="title__dsc">Linha Alfa TX - TX1040</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça de carenagem rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m05">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/sx-supino-vertical.png" alt="Supino Vertical" id="item">
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Supino Vertical</h3>
+                    <h4 class="title__dsc">Linha Alfa SX - SX2020</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável, tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça da carenagem em rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m06">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/sx-crucifixo.png" alt="Crucifixo Peito e Dorsal" id="item">
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Crucifixo Peito e Dorsal</h3>
+                    <h4 class="title__dsc">Linha Alfa SX - SX2012</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável, tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça da carenagem em rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m07">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/sx-cross-com-smith.png" alt="Cross Over c/ Smith" id="item">                    
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Cross Over c/ Smith</h3>
+                    <h4 class="title__dsc">Linha Alfa SX - 2059</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável, tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça da carenagem em rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m08">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/Máquinas Alfa/recortadas/sx-maquina-biceps.png" alt="Máquina Biceps" id="item">                    
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Máquina Biceps</h3>
+                    <h4 class="title__dsc">Linha Alfa SX - 2090</h4>
+                    <p class="txt">Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável, tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Incremento de carga de 2,5Kg;</li>
+                        <li class="list__bullet">Cabeça da carenagem em rotomoldado;</li>
+                        <li class="list__bullet">Ajuste com indicação numérica;</li>
+                        <li class="list__bullet">Encosto pantográfico.</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m09">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/maquinas-sigma/recortadas/panturilha-agachamento.png" alt="Panturilha com agachamento" id="item">                    
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Panturilha c/ Agachamento</h3>
+                    <h4 class="title__dsc">Linha Sigma</h4>
+                    <p class="txt">Estofado de produzido em Courvin padrão "Náutico" Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Espuma de densidade AG 120;</li>
+                        <li class="list__bullet">Bateria de peso em Aço fundido;</li>
+                        <li class="list__bullet">Carenagens em PS alto impacto (Fechamento parcial);</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m10">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/maquinas-sigma/recortadas/cross-angular-smith.png" alt="Cross Over Angular com Smith" id="item">
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Cross Over Angular c/ Smith</h3>
+                    <h4 class="title__dsc">Linha Sigma</h4>
+                    <p class="txt">Estofado de produzido em Courvin padrão "Náutico" Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Espuma de densidade AG 120;</li>
+                        <li class="list__bullet">Bateria de peso em Aço fundido;</li>
+                        <li class="list__bullet">Carenagens em PS alto impacto (Fechamento parcial);</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m11">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/maquinas-sigma/recortadas/peck-deck.png" alt="Peck Deck" id="item">
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Peck Deck</h3>
+                    <h4 class="title__dsc">Linha Sigma</h4>
+                    <p class="txt">Estofado de produzido em Courvin padrão "Náutico" Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Espuma de densidade AG 120;</li>
+                        <li class="list__bullet">Bateria de peso em Aço fundido;</li>
+                        <li class="list__bullet">Carenagens em PS alto impacto (Fechamento parcial);</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal" id="m12">
+                <i class="fi fi-br-cross close"></i>
+                <div class="modal__img">                
+                    <img src="./sources/maquinas-sigma/recortadas/Remada-Sentada-Maquina.png" alt="Remada Sentada" id="item">
+                </div>
+                <div class="modal__infos">
+                    <h3 class="title">Remada Sentada</h3>
+                    <h4 class="title__dsc">Linha Sigma</h4>
+                    <p class="txt">Estofado de produzido em Courvin padrão "Náutico" Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios. Tudo isso e mais:</p>
+                    <ul>
+                        <li class="list__bullet">Espuma de densidade AG 120;</li>
+                        <li class="list__bullet">Bateria de peso em Aço fundido;</li>
+                        <li class="list__bullet">Carenagens em PS alto impacto (Fechamento parcial);</li>
+                    </ul>
+                    <div class="qtde">
+                        <h3 class="title__qtde">Qtde</h3>
+                        <input type="number" name="qtde" id="qtde" min="1" max="10" value="1">
+                    </div>
+                    <a href="https://wa.me/5519988773344?text=Quero%20saber%20o%20valor%20desta%20máquina" target="_blank">
+                        <button type="button">Consulte um consultor</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div id="md-planos">           
+            <table class="tb-planos">  
+                <i class="fi fi-br-cross close-md-planos"></i>
+                <h5 class="title">Standard</h5>              
+                <thead>
+                    <tr>
+                        <th class="tb-planos__th">Combos</th>
+                        <th class="tb-planos__th">Máquinas</th>
+                        <th class="tb-planos__th"></th> 
+                    </tr>                    
+                </thead>
+                <tbody class="tb-planos">
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 25m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Estação 1 usuário (90KG)</li>
+                                <li>Banco Regulável 3 em 1</li>
+                                <li>Espaldar Aço</li>
+                                <li>torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Profissional</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 50m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Suporte p/ Agachamento</li>
+                                <li>Ext.Flex. Sentada Conjugada (60Kg)</li>
+                                <li>Pulley c/ Remada (60Kg)</li>
+                                <li>Banco Supino Regulável 2 em 1</li>
+                                <li>Banco Regulável 3 em 1</li>
+                                <li>Espaldar Aço</li>
+                                <li>torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Profissional</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 80m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Abdutor (60Kg)</li>
+                                <li>Adutor (60Kg)</li>
+                                <li>Polia Alta (60Kg)</li>
+                                <li>Crossover Angular (60Kg)</li>
+                                <li>Desenvolvimento Ombro Máquina</li>
+                                <li>Extensora (60Kg)</li>
+                                <li>Flexora Deitada (60Kg)</li>
+                                <li>Leg Press Horizontal (60Kg)</li>
+                                <li>Remada Sentada Máquina (60Kg)</li>
+                                <li>Supino Verrtical Máquina (60Kg)</li>
+                                <li>Banco Regulável 3 em 1</li>
+                                <li>Espaldar Aço</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Profissional</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th class="tb-planos__th"></th>
+                        <th colspan="3" class="tb-planos__title">Premium</th>
+                        <th class="tb-planos__th"></th> 
+                    </tr>                    
+                </thead>
+                <tbody class="tb-planos">
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 25m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Cross. Angular c/ Smith (100Kg) c/ contra peso</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Spinning (Sistema de Correia)</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 50m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Suporte p/ Agachamento</li>
+                                <li>Ext.Flex. Sentada Conjugada (100Kg) c/ Rapid Fire</li>
+                                <li>Pulley c/ Remada (100Kg)</li>
+                                <li>Banco Supino Regulável</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 80m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Abdutor (80Kg)</li>
+                                <li>Adutor (80Kg)</li>
+                                <li>Polia Alta (100Kg)</li>
+                                <li>Crossover Angular (100Kg)</li>
+                                <li>Desenvolvimento Ombro Máquina (100Kg)</li>
+                                <li>Extensora (100Kg) c/ Rapid Fire</li>
+                                <li>Flexora Deitada (100Kg)</li>
+                                <li>Leg Press Horizontal (100Kg)</li>
+                                <li>Remada Sentada Máquina (100Kg)</li>
+                                <li>Supino Vertical Máquina (100Kg)</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th class="tb-planos__th"></th>
+                        <th class="tb-planos__title">Platinum</th>
+                        <th class="tb-planos__th"></th> 
+                    </tr>                    
+                </thead>
+                <tbody class="tb-planos">
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 25m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Cross. Angular c/ Smith (100Kg)</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (c/ inclinação)</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 50m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Suporte p/ Agachamento</li>
+                                <li>Extensora c/ Flexora Sentada (100Kg)</li>
+                                <li>Polia superior e inferior (100Kg)</li>
+                                <li>Banco Supino Regulável</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (c/ inclinação)</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 80m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Abdutor (80Kg)</li>
+                                <li>Adutor (80Kg)</li>
+                                <li>Polia Superior (100Kg)</li>
+                                <li>Crossover Angular (100Kg)</li>
+                                <li>Desenvolvimento Unilateral (80Kg)</li>
+                                <li>Extensora (100Kg)</li>
+                                <li>Flexora Sentado (100Kg)</li>
+                                <li>Leg Press Horizontal Sentado (100Kg)</li>
+                                <li>Remada Unilateral (80Kg)</li>
+                                <li>Supino Vertical (80Kg)</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (c/ inclinação)</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
     </main>
+    <div class="whatsapp-fixed">
+        <a href="https://wa.me/5519988773344?text=Olá%20tudo%20bem?%20Gostaria%20de%20saber%20quais%20são%20os%20seus%20planos%20disponíveis?" target="_blank">
+            <i class="fi fi-brands-whatsapp"></i>
+        </a>
+        <p class="whatsapp-fixed__txt">Contrate agora!</p>
+    </div>
     <footer>
         <div class="container">
             <div class="foot">
@@ -532,6 +1024,7 @@
         </div>
     </footer>
 
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

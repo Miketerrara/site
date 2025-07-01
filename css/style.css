@@ -260,6 +260,81 @@ footer div i {
   }
 }
 
+#complete-line {
+  position: relative;
+  background: transparent;
+}
+#complete-line a {
+  color: #252525;
+}
+
+.hero-complete-line {
+  background-color: #ffdc7f;
+  border-radius: 2rem;
+  padding: 4rem 12rem;
+  margin-top: 8rem;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  height: 32rem;
+  position: relative;
+}
+.hero-complete-line__title, .hero-complete-line__txt {
+  color: #5c5c5c;
+  width: 44rem;
+}
+.hero-complete-line__title {
+  font: 900 4.8rem "Aspira Wide", sans-serif;
+  line-height: 4.4rem;
+}
+.hero-complete-line__btn {
+  background-color: #fff;
+  width: 20rem;
+  height: 4rem;
+  font: 900 1.4rem "Aspira Wide", sans-serif;
+  padding: 0.8rem 2rem;
+  transition: all 0.25s ease-in;
+}
+.hero-complete-line__btn:hover {
+  color: #f9ba10;
+}
+
+.complete-line-photo {
+  position: absolute;
+  right: 6rem;
+  top: -2rem;
+  width: 42rem;
+  height: auto;
+}
+
+.complete-line__footer {
+  width: 100%;
+  height: 18rem;
+  background-color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.complete-line__footer-title {
+  font: 900 2rem "Aspira Wide", sans-serif;
+  color: #252525;
+}
+.complete-line__footer-dsc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.complete-line__footer-dsc .fi, .complete-line__footer-dsc .txt-equip {
+  font: 400 1.4rem "Aspira Wide", sans-serif;
+}
+.complete-line__footer-dsc .txt-equip {
+  color: #5c5c5c;
+}
+.complete-line__footer-dsc .fi {
+  color: #252525;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -267,7 +342,7 @@ html {
 
 body {
   font-family: "Aspira Wide", sans-serif;
-  background: #fff;
+  background: #F9F9FF;
   overflow-x: hidden;
 }
 
@@ -405,72 +480,36 @@ header .menu-toggle {
   flex: 2 1 70rem;
   height: 41rem;
 }
-.container__presentation .project__photo--over {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-  z-index: 2;
-  user-select: none;
+.container__presentation .carousel-inner {
+  border-radius: 1rem;
+  margin: 0 2rem;
 }
-.container__presentation .project__photo--over img {
-  width: 20rem;
-  height: 36rem;
-  object-fit: cover;
-  object-position: 50% 50%;
+.container__presentation .carousel-caption {
+  margin-bottom: 3.2rem;
 }
-.container__presentation .project__photos {
-  z-index: 0;
-  position: relative;
-  float: right;
-  width: 70rem;
-  height: 41rem;
-}
-.container__presentation .project__photos .project__txt {
-  position: absolute;
-  bottom: 4rem;
-  left: 6rem;
-  z-index: 2;
-}
-.container__presentation .project__photos .project__txt h3 {
+.container__presentation .carousel-item h5 {
   font: 900 2.8rem/3.6rem "Aspira Wide", sans-serif;
   color: #f9ba10;
   font-weight: 900;
 }
-.container__presentation .project__photos .project__txt p {
+.container__presentation .carousel-item p {
   font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
   color: #fff;
 }
-.container__presentation .project__photos .project__txt h4 {
+.container__presentation .carousel-item h6 {
   font: 300 2rem/2.4rem "Aspira Wide", sans-serif;
   color: #f9ba10;
 }
-.container__presentation .project__photos .slider {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  cursor: pointer;
-}
-.container__presentation .project__photos .slider .fi-ts-angle-small-left, .container__presentation .project__photos .slider .fi-ts-angle-small-right {
-  color: #252525;
-  font-size: 2rem;
-  background-color: #fff;
-  padding: 1rem;
-  padding-bottom: 0;
-  cursor: pointer;
-}
-.container__presentation .project__photos .slider .fi-ts-angle-small-left:hover, .container__presentation .project__photos .slider .fi-ts-angle-small-right:hover {
-  background-color: #F9F9FF;
-}
-.container__presentation .project__photos img {
+.container__presentation .carousel-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(1px) brightness(0.5);
-  transition: all 0.25s ease-in;
+  filter: brightness(0.5);
 }
-.container__presentation .project__photos img:hover {
-  filter: blur(0) brightness(0.8);
+.container__presentation .carousel-control-prev, .container__presentation .carousel-control-next {
+  top: 50% !important;
+  transform: translate(0, -50%);
+}
+.container__presentation .carousel-control-prev .carousel-control-prev-icon, .container__presentation .carousel-control-prev .carousel-control-next-icon, .container__presentation .carousel-control-next .carousel-control-prev-icon, .container__presentation .carousel-control-next .carousel-control-next-icon {
+  color: #fff !important;
 }
 .container__form {
   display: flex;
@@ -534,10 +573,15 @@ header .menu-toggle {
   justify-content: space-between;
   align-items: center;
 }
+.line-equipment:last-child {
+  justify-content: center;
+  gap: 2rem;
+}
 .line-equipment .box-equipment {
   border: 1px solid transparent;
   width: 30rem;
-  height: 38rem;
+  height: auto;
+  margin-top: 3.2rem;
   cursor: pointer;
   transition: all 0.25s ease-in;
 }
@@ -577,6 +621,21 @@ header .menu-toggle {
 }
 .line-equipment .box-equipment__footer-dsc .fi {
   color: #fff;
+}
+.line-equipment .box-equipment__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.line-equipment .box-equipment__btns--l {
+  width: 50%;
+  text-align: center;
+}
+.line-equipment .box-equipment__btns--r {
+  width: 50%;
+  padding: 0.8rem 1rem;
+  font: 900 1.4rem "Aspira Wide", sans-serif;
+  border-radius: 2rem;
 }
 @media screen and (max-width: 1024px) {
   .line-equipment {
@@ -835,13 +894,15 @@ header .menu-toggle {
 button {
   border: none;
   background-color: #f9ba10;
-  font: 800 2rem "Aspira Wide", sans-serif;
-  letter-spacing: 0.08rem;
+  font: 900 1.6rem "Aspira Wide", sans-serif;
   padding: 0.8rem 6rem;
   height: 4rem;
   border-radius: 0.4rem;
   color: #252525;
   margin: 2rem auto;
+}
+button:hover {
+  background-color: #dbaf38;
 }
 
 .dsc-contato {
@@ -868,7 +929,7 @@ button {
   margin-bottom: 0.4rem;
 }
 .form form fieldset input {
-  padding: 1rem 0.8rem;
+  padding: 2rem 1.2rem;
   border-radius: 0.8rem;
   border: 1px solid transparent;
   outline: none;
@@ -878,12 +939,14 @@ button {
 .form form fieldset input::placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-family: "Aspira Wide", sans-serif;
+  font-size: 1.2rem;
 }
 .form form .submit {
   width: 24rem;
-  padding: 0.8rem;
+  padding: 1.2rem 1rem;
   background-color: #252525;
   color: #fff;
+  font-size: 1.4rem;
   border: 0px solid transparent;
   border-radius: 0.4rem;
   outline: none;
@@ -897,7 +960,6 @@ a {
 }
 a:visited {
   text-decoration: underline;
-  color: #5c5c5c;
 }
 
 .modal {
@@ -916,26 +978,6 @@ a:visited {
   height: 100%;
   object-fit: contain;
   object-position: 50% 50%;
-}
-.modal__img .slider {
-  position: absolute;
-  right: 0.4rem;
-  top: 50%;
-  transform: translate(-50%);
-  display: flex;
-  flex-direction: column;
-}
-.modal__img .slider .fi {
-  margin: 1rem 0;
-  color: #5c5c5c;
-}
-.modal__img .nxt-image {
-  position: absolute;
-  bottom: 12rem;
-  right: 2rem;
-  font-size: 2rem;
-  color: #5c5c5c;
-  cursor: pointer;
 }
 .modal__infos {
   flex: 1 1 50rem;
@@ -983,8 +1025,22 @@ a:visited {
   text-align: right;
   font: 300 1.6rem/2.4rem "Aspira Wide", sans-serif;
 }
-.modal--active {
-  display: flex;
+.modal__infos--btn {
+  border: none;
+  background-color: #f9ba10;
+  font: 900 1.6rem "Aspira Wide", sans-serif;
+  padding: 0.8rem 2rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  color: #252525;
+  margin: 2rem auto;
+}
+.modal__infos--btn:hover {
+  background-color: #dbaf38;
+}
+
+#m01, #m02, #m03, #m04, #m05, #m06, #m07, #m08, #m09, #m10, #m11, #m12 {
+  display: none;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
@@ -1000,6 +1056,118 @@ a:visited {
   transform: translate(-50%, -50%);
   z-index: 999;
 }
+#m01 .close, #m02 .close, #m03 .close, #m04 .close, #m05 .close, #m06 .close, #m07 .close, #m08 .close, #m09 .close, #m10 .close, #m11 .close, #m12 .close {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 1.6rem;
+  color: #5c5c5c;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+#m01 .close:hover, #m02 .close:hover, #m03 .close:hover, #m04 .close:hover, #m05 .close:hover, #m06 .close:hover, #m07 .close:hover, #m08 .close:hover, #m09 .close:hover, #m10 .close:hover, #m11 .close:hover, #m12 .close:hover {
+  transform: scale(1.16);
+}
+
+#md-planos {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100.6rem;
+  height: 83rem;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.2);
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+#md-planos .title {
+  font: 300 1.6rem "Aspira Wide", sans-serif;
+  letter-spacing: 4px;
+  margin: 4rem auto;
+  text-align: center;
+  color: #5c5c5c;
+}
+#md-planos .tb-planos {
+  display: block;
+  width: 92.6rem;
+  margin: 3.2rem auto;
+}
+#md-planos .tb-planos__title {
+  display: block;
+  font: 300 1.6rem "Aspira Wide", sans-serif;
+  letter-spacing: 4px;
+  margin: 4rem auto;
+  text-align: center;
+  color: #5c5c5c;
+  width: 93rem;
+}
+#md-planos .tb-planos__title:nth-child(2) {
+  background-color: #1a1a1a;
+  padding: 2rem 0;
+  color: #ccc;
+}
+#md-planos .tb-planos__th {
+  text-align: center;
+  font: 900 1.6rem "Aspira Wide", sans-serif;
+  width: 30rem;
+  margin: 0.8rem auto;
+  color: #5c5c5c;
+}
+#md-planos .tb-planos__td {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 1.4rem 2rem;
+  width: 30rem;
+  font: 300 1rem/1.6rem "Aspira Wide", sans-serif;
+  box-sizing: border-box;
+  margin: 0 2rem;
+}
+#md-planos .tb-planos__td--th {
+  font: 900 2rem "Aspira Wide", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  color: #f9ba10;
+}
+#md-planos .tb-planos__td--btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: #252525;
+  font: 900 1.6rem "Aspira Wide", sans-serif;
+  padding: 0.8rem 6rem;
+  height: 4rem;
+  border-radius: 8rem;
+  color: #fff;
+  margin: 0;
+}
+#md-planos .tb-planos__td--btn:hover {
+  background-color: #1a1a1a;
+}
+#md-planos .close-md-planos {
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 1.6rem;
+  color: #5c5c5c;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+#md-planos .close-md-planos:hover {
+  transform: scale(1.16);
+}
 
 .whatsapp-fixed {
   position: fixed;
@@ -1008,8 +1176,8 @@ a:visited {
   z-index: 1000;
   background: #25d366;
   color: #fff;
-  border-radius: 50%;
-  width: 5.2rem;
+  border-radius: 8rem;
+  width: 16rem;
   height: 5.2rem;
   display: flex;
   align-items: center;
@@ -1017,6 +1185,7 @@ a:visited {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: background 0.2s;
   text-decoration: none;
+  cursor: pointer;
   animation: wpp 5s ease-in-out 0s infinite alternate;
   transition: all 0.25s ease-in;
 }
@@ -1025,6 +1194,11 @@ a:visited {
 }
 .whatsapp-fixed:hover {
   background: #1ebe5d;
+}
+.whatsapp-fixed__txt {
+  margin-left: 1rem;
+  font: 600 1.2rem "Aspira Wide", sans-serif;
+  color: #252525;
 }
 
 @keyframes wpp {
@@ -1049,7 +1223,35 @@ a:visited {
   .dsc-contato {
     flex: 1 1 100%;
   }
-  .faq {
+  #md-planos {
+    width: 100%;
+  }
+  #md-planos .close-md-planos {
+    position: fixed;
+  }
+  #md-planos .tb-planos {
+    width: 100%;
+  }
+  #md-planos .tb-planos__title {
+    width: 100%;
+  }
+  #md-planos .tb-planos__td--btn {
+    display: none;
+  }
+  #m01, #m02, #m03, #m04, #m05, #m06, #m07, #m08, #m09, #m10, #m11, #m12 {
+    display: none;
+    overflow: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  #m01 .close, #m02 .close, #m03 .close, #m04 .close, #m05 .close, #m06 .close, #m07 .close, #m08 .close, #m09 .close, #m10 .close, #m11 .close, #m12 .close {
+    z-index: 999;
+  }
+  .box-faq--active {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .box-faq .faq {
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
