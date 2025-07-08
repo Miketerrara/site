@@ -459,7 +459,7 @@
                         <p class="txt">Preencha o formulário para solicitar um orçamento personalizado para o seu condomínio ou compra de equipamentos.</p>
                     </div>
                     <div class="form">
-                        <form action="" method="get">
+                        <form action="paraenviar.php" method="get" target="paraenviar">
                             <fieldset>
                                 <label for="nomecompleto">Nome Completo</label>
                                 <input type="text" name="nomecompleto" id="nomecompleto" placeholder="Nome Completo">
@@ -467,13 +467,15 @@
                             <fieldset>
                                 <label for="email">E-mail</label>
                                 <input type="email" name="email" id="email" placeholder="seunome@contato.com.br">
-                            </fieldset>
-                            <fieldset>
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" name="telefone" id="telefone" placeholder="(19) 9 9999.9999">
-                            </fieldset>
-                            <input type="submit" class="submit" value="Enviar">
-                        </form>
+                                <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></fieldset>
+                                <fieldset>
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" name="telefone" id="telefone" placeholder="(19) 9 9999.9999">
+                                </fieldset>
+                                <input type="submit" class="submit" value="Enviar">
+                                <p>&nbsp;</p>
+                                <iframe name="paraenviar" style="width: 100%; height: 30px; border: 0px solid #ccc;" onload="limpa();"></iframe>
+                            </form>
                     </div>
                 </div>                
             </div>
@@ -1024,7 +1026,13 @@
             <p class="txt__white">AGBe 2025. Todos os direitos reservados</p>
         </div>
     </footer>
-
+    <script>        
+        function limpa(){
+            document.getElementById('nomecompleto').value="";
+            document.getElementById('email').value="";
+            document.getElementById('telefone').value="";
+        }        
+    </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
