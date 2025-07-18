@@ -63,7 +63,7 @@
     }
 }
 @mixin close-btn($ff: 1.6rem){
-    position:absolute;
+    position:fixed !important;
     top:3.2rem;
     right:3.2rem;    
     font-size:$ff;
@@ -652,21 +652,22 @@ a{
     display:none;
     &__img{
         flex:1 1 52rem;
-        height:100%;
+        height:100vh;
         position:relative;
         box-shadow:c.$shadow-box;
         border-top-right-radius:4rem;
         border-bottom-right-radius:4rem;
         #item{
             width:100%;
-            height:100%;
+            height:100vh;
             object-fit: contain;
             object-position:50% 50%;
         }        
     }    
     &__infos{
         flex:1 1 50rem;
-        margin:3.2rem 4.8rem;
+        padding:3.2rem 4.8rem;
+        box-sizing:border-box;
         .title{
             font-size:4rem;
             &__dsc{
@@ -713,17 +714,17 @@ a{
             @include buttons($p:.8rem 2rem, $b-rd:.8rem);
         }
         
-    }
-    
+    }    
 }
 #m01, #m02, #m03, #m04, #m05, #m06, #m07, #m08, #m09, #m10, #m11, #m12{
     display:none;
-    overflow:hidden;
+    overflow:auto;
+    scrollbar-width:thin;
     justify-content:space-between;
     align-items:center;
     position:fixed;
     width:100.6rem;
-    height:83rem;
+    height:80vh;
     background-color:c.$bg;
     border-radius:2rem;
     box-shadow:c.$shadow-box;
@@ -742,7 +743,7 @@ a{
     align-items:center;
     position:fixed;
     width:100.6rem;
-    height:83rem;
+    height:90vh;
     padding:2rem 4rem;    
     background-color:c.$bg;
     border-radius:2rem;
@@ -750,18 +751,16 @@ a{
     box-sizing:border-box;
     top:50%;
     left:50%;
-    overflow-x:scroll;
+    overflow-x:auto;
     scrollbar-width:thin;
     transform:translate(-50%,-50%);
     z-index:999;  
-    .title{
-        font:300 1.6rem c.$ff;
-        letter-spacing: 4px;
-        margin:4rem auto;        
-        text-align:center;
-        color:c.$txtColor;
+    .close-md-planos{
+            @include close-btn;
+        }    
     }
     .tb-planos{
+        position:relative;
         display:block;
         width:92.6rem;
         margin:3.2rem auto;
@@ -809,10 +808,7 @@ a{
                 @include buttons($b-rd:8rem, $bg:c.$principal, $c:#fff, $m:0, $bg-h:c.$principal-h);                
             }
         }
-    }
-    .close-md-planos{
-        @include close-btn;
-    }    
+        
 }
 .whatsapp-fixed {
     position: fixed;
@@ -867,7 +863,7 @@ a{
         flex:1 1 100%;
     }
     #md-planos{
-        width:100%;
+        width:100vw;
         .close-md-planos{
             position:fixed;
         }
@@ -885,7 +881,8 @@ a{
     #m01, #m02, #m03, #m04, #m05, #m06, #m07, #m08, #m09, #m10, #m11, #m12{
         display:none;
         overflow:auto;
-        width:100%;
+        width:100vw;
+
         flex-direction:column;
         .close{
             z-index:999;

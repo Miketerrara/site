@@ -967,7 +967,7 @@ a:visited {
 }
 .modal__img {
   flex: 1 1 52rem;
-  height: 100%;
+  height: 100vh;
   position: relative;
   box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.2);
   border-top-right-radius: 4rem;
@@ -975,13 +975,14 @@ a:visited {
 }
 .modal__img #item {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: contain;
   object-position: 50% 50%;
 }
 .modal__infos {
   flex: 1 1 50rem;
-  margin: 3.2rem 4.8rem;
+  padding: 3.2rem 4.8rem;
+  box-sizing: border-box;
 }
 .modal__infos .title {
   font-size: 4rem;
@@ -1041,12 +1042,13 @@ a:visited {
 
 #m01, #m02, #m03, #m04, #m05, #m06, #m07, #m08, #m09, #m10, #m11, #m12 {
   display: none;
-  overflow: hidden;
+  overflow: auto;
+  scrollbar-width: thin;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100.6rem;
-  height: 83rem;
+  height: 80vh;
   background-color: #fff;
   border-radius: 2rem;
   box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.2);
@@ -1057,7 +1059,7 @@ a:visited {
   z-index: 999;
 }
 #m01 .close, #m02 .close, #m03 .close, #m04 .close, #m05 .close, #m06 .close, #m07 .close, #m08 .close, #m09 .close, #m10 .close, #m11 .close, #m12 .close {
-  position: absolute;
+  position: fixed !important;
   top: 3.2rem;
   right: 3.2rem;
   font-size: 1.6rem;
@@ -1076,7 +1078,7 @@ a:visited {
   align-items: center;
   position: fixed;
   width: 100.6rem;
-  height: 83rem;
+  height: 90vh;
   padding: 2rem 4rem;
   background-color: #fff;
   border-radius: 2rem;
@@ -1084,24 +1086,32 @@ a:visited {
   box-sizing: border-box;
   top: 50%;
   left: 50%;
-  overflow-x: scroll;
+  overflow-x: auto;
   scrollbar-width: thin;
   transform: translate(-50%, -50%);
   z-index: 999;
 }
-#md-planos .title {
-  font: 300 1.6rem "Aspira Wide", sans-serif;
-  letter-spacing: 4px;
-  margin: 4rem auto;
-  text-align: center;
+#md-planos .close-md-planos {
+  position: fixed !important;
+  top: 3.2rem;
+  right: 3.2rem;
+  font-size: 1.6rem;
   color: #5c5c5c;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 50% 50%;
+  cursor: pointer;
 }
-#md-planos .tb-planos {
+#md-planos .close-md-planos:hover {
+  transform: scale(1.16);
+}
+
+.tb-planos {
+  position: relative;
   display: block;
   width: 92.6rem;
   margin: 3.2rem auto;
 }
-#md-planos .tb-planos__title {
+.tb-planos__title {
   display: block;
   font: 300 1.6rem "Aspira Wide", sans-serif;
   letter-spacing: 4px;
@@ -1110,19 +1120,19 @@ a:visited {
   color: #5c5c5c;
   width: 93rem;
 }
-#md-planos .tb-planos__title:nth-child(2) {
+.tb-planos__title:nth-child(2) {
   background-color: #1a1a1a;
   padding: 2rem 0;
   color: #ccc;
 }
-#md-planos .tb-planos__th {
+.tb-planos__th {
   text-align: center;
   font: 900 1.6rem "Aspira Wide", sans-serif;
   width: 30rem;
   margin: 0.8rem auto;
   color: #5c5c5c;
 }
-#md-planos .tb-planos__td {
+.tb-planos__td {
   position: relative;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
@@ -1132,13 +1142,13 @@ a:visited {
   box-sizing: border-box;
   margin: 0 2rem;
 }
-#md-planos .tb-planos__td--th {
+.tb-planos__td--th {
   font: 900 2rem "Aspira Wide", sans-serif;
   vertical-align: middle;
   text-align: center;
   color: #f9ba10;
 }
-#md-planos .tb-planos__td--btn {
+.tb-planos__td--btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1152,21 +1162,8 @@ a:visited {
   color: #fff;
   margin: 0;
 }
-#md-planos .tb-planos__td--btn:hover {
+.tb-planos__td--btn:hover {
   background-color: #1a1a1a;
-}
-#md-planos .close-md-planos {
-  position: absolute;
-  top: 3.2rem;
-  right: 3.2rem;
-  font-size: 1.6rem;
-  color: #5c5c5c;
-  transition: all 0.3s ease-in-out;
-  transform-origin: 50% 50%;
-  cursor: pointer;
-}
-#md-planos .close-md-planos:hover {
-  transform: scale(1.16);
 }
 
 .whatsapp-fixed {
@@ -1224,7 +1221,7 @@ a:visited {
     flex: 1 1 100%;
   }
   #md-planos {
-    width: 100%;
+    width: 100vw;
   }
   #md-planos .close-md-planos {
     position: fixed;
@@ -1241,7 +1238,7 @@ a:visited {
   #m01, #m02, #m03, #m04, #m05, #m06, #m07, #m08, #m09, #m10, #m11, #m12 {
     display: none;
     overflow: auto;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
   }
   #m01 .close, #m02 .close, #m03 .close, #m04 .close, #m05 .close, #m06 .close, #m07 .close, #m08 .close, #m09 .close, #m10 .close, #m11 .close, #m12 .close {

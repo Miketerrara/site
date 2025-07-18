@@ -1,0 +1,62 @@
+const elements = {
+    bar: document.querySelector('.menu__bars'),
+    barsClose: document.querySelector('.dms-bar'),
+    btnRastreio: document.querySelector('.rastreio__btn'),
+    rastreioContainer: document.querySelector('.rastreio__container'),
+    navContainer:document.querySelector('.nav__container'),
+    faq: document.querySelectorAll('.box-questions'),
+    resposta: document.querySelectorAll('.response'),
+    chevron: document.querySelectorAll('.fi-br-angle-small-down'),
+    modalScreen: document.querySelector('.modal__rastreio'),
+    btnModal: document.getElementById('modalRastreio'),
+    modalOp: document.querySelectorAll('.carrer__opportunities-modal')
+}
+
+elements.bar.addEventListener('click', () => {
+    elements.navContainer.classList.toggle('nav__container--active')
+
+})
+elements.barsClose.addEventListener('click', () => {
+    elements.bar.dispatchEvent(new Event('click'));
+})
+
+function fecharModal(modal) {
+    let fechar = document.querySelector('.close');
+    fechar.addEventListener('click', () =>{        
+        modal.classList.remove('modal__rastreio--active');
+        let body = document.getElementsByTagName('body')
+        let screen = Array.from(body[0].children);
+        for (let i = 0; i < screen.length; i++) {
+            screen[i].classList.remove('blur');       
+            
+        }
+    })
+}
+
+elements.btnModal.addEventListener('click',()=>{
+    elements.modalScreen.classList.toggle('modal__rastreio--active')
+    let modal = elements.modalScreen;
+    
+    let body = document.getElementsByTagName('body')
+    let screen = Array.from(body[0].children);
+    fecharModal(modal);
+    for (let i = 0; i < screen.length-4; i++) {
+        screen[i].classList.add('blur');        
+    }
+});
+
+let localTitle = document.getElementsByClassName('modal__title');
+let txtTitle = title[0].innerHTML;
+
+elements.modalOp.forEach((item, index), () =>{
+    item[index].addEventListener('click', () =>{
+        
+    })
+})
+
+let tagLocal = document.querySelectorAll('.modal__tags--local');
+let parent = tagLocal[0].parentElement;
+let parentParent = parent.parentElement;
+
+
+console.log(parentParent)
