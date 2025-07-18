@@ -26,14 +26,78 @@ const _gallery = [
     [
         ["./sources/Máquinas Alfa/IMG-20250328-WA0040.jpg", "", "Linha Alfa TX - TX1052", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
         ["./sources/Máquinas Alfa/IMG-20250328-WA0041.jpg", "", "Linha Alfa TX - TX1054", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
-        ["./sources/Máquinas Alfa/IMG-20250328-WA0042.jpg", "", "Linha Alfa TX - TX1015", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
-        ["./sources/Máquinas Alfa/IMG-20250328-WA0047.jpg", "", "Linha Alfa TX - TX1040", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."]        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0046.jpg", "", "Linha Alfa TX - TX1015", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0047.jpg", "", "Linha Alfa TX - TX1040", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0044.jpg", "", "Linha Alfa TX - TX1025-EP", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0041.jpg", "", "Linha Alfa TX - TX1054", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0043.jpg", "", "Linha Alfa TX - TX1020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0042.jpg", "", "Linha Alfa TX - TX1015-EP", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0045.jpg", "", "Linha Alfa TX - TX1051", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0050.jpg", "", "Linha Alfa TX - TX1055", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0051.jpg", "", "Linha Alfa TX - TX1058", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0052.jpg", "", "Linha Alfa TX - TX1070", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0054.jpg", "", "Linha Alfa TX - TX1060", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0056.jpg", "", "Linha Alfa TX - TX1080", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0057.jpg", "", "Linha Alfa TX - TX1085", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0058.jpg", "", "Linha Alfa TX - TX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0059.jpg", "", "Linha Alfa TX - TX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0060.jpg", "", "Linha Alfa TX - TX2022", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0061.jpg", "", "Linha Alfa TX - TX2010", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0062.jpg", "", "Linha Alfa TX - TX2028", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0063.jpg", "", "Linha Alfa TX - TX2040", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],       
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0064.jpg", "", "Linha Alfa TX - TX2051", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0065.jpg", "", "Linha Alfa TX - TX2042", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0066.jpg", "", "Linha Alfa TX - TX2050", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0067.jpg", "", "Linha Alfa TX - TX2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0068.jpg", "", "Linha Alfa TX - TX2057", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],        
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0069.jpg", "", "Linha Alfa TX - TX2084", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0070.jpg", "", "Linha Alfa TX - TX2061", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0071.jpg", "", "Linha Alfa TX - TX2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0072.jpg", "", "Linha Alfa TX - TX2055", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e porta garrafas que aumentam a sua conveniência no momento do treino."]       
     ],
     [
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0073.jpg", "", "Linha Alfa SX - SX2099", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/SX1060 - Apolete.png", "", "Linha Alfa SX - SX1060", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/SX1052.png", "", "Linha Alfa SX - SX1052", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0078.jpg", "", "Linha Alfa SX - SX1030-EP", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0079.jpg", "", "Linha Alfa SX - SX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0080.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0081.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0082.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0084.jpg", "", "Linha Alfa SX - SX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0085.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0086.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0087.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0088.jpg", "", "Linha Alfa SX - SX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0090.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0091.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0093.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0096.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
         ["./sources/Máquinas Alfa/IMG-20250328-WA0094.jpg", "", "Linha Alfa SX - SX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
-        ["./sources/Máquinas Alfa/IMG-20250328-WA0096.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
-        ["./sources/Máquinas Alfa/IMG-20250328-WA0103.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
-        ["./sources/Máquinas Alfa/IMG-20250328-WA0105.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."]      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0098.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0097.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0095.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0099.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0100.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0101.jpg", "", "Linha Alfa SX - SX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0103.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0104.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0105.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0106.jpg", "", "Linha Alfa SX - 2090", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],      
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0107.jpg", "", "Linha Alfa SX - SX2020", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0102.jpg", "", "Linha Alfa SX - SX2012", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."],
+        ["./sources/Máquinas Alfa/IMG-20250328-WA0108.jpg", "", "Linha Alfa SX - 2059", "Estofado de alta resistência e formato anatômico para maior conforto ao fazer seus exercícios, porta objetos e garrafas que aumentam a sua conveniência no momento do treino. Ideal para quem quer treinar com em um ambiente mais agradável."]
+    ],
+    [
+        ["./sources/maquinas-sigma/recortadas/cross-angular-smith.png", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],
+        ["./sources/maquinas-sigma/crossover-tradicional.png", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],
+        ["./sources/maquinas-sigma/Gluteo-Deslizante.jpeg", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],
+        ["./sources/maquinas-sigma/recortadas/panturilha-agachamento.png", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],      
+        ["./sources/maquinas-sigma/recortadas/peck-deck.png", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],      
+        ["./sources/maquinas-sigma/Polia-Regulavel-Simples-1.jpg", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],      
+        ["./sources/maquinas-sigma/Pulley-com-Remada-6.jpeg", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],      
+        ["./sources/maquinas-sigma/recortadas/Remada-Sentada-Maquina.png", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],      
+        ["./sources/maquinas-sigma/Supino-Vertical-Maquina-3.jpeg", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."]     
     ],
     [
         ["./sources/maquinas-sigma/recortadas/cross-angular-smith.png", "", "Linha Sigma", "Estofado de produzido em Courvin padrão Náutico Antimofo para maior durabilidade e custo benefício, cabos de aço em Nylon (alta resistência), mais segurança nos movimentos dos seus exercícios."],
@@ -192,7 +256,10 @@ if (document.querySelector('#beneficios')) {
     });
 }
 let tx = _gallery[0];
+let sx = _gallery[1];
 let sigma = _gallery[2];
+let cromus = _gallery[3];
+
 
 function openModalEquip() {
     let modalEquip = document.getElementById('m01');    
@@ -210,22 +277,69 @@ function dsModal(modals){
     });
 }
 function switchModal(index){
-    modalEquip.style.display = 'none';    
-    modalEquip.style.display = 'flex';
+    if (document.querySelector("#sigma")) {
+        modalEquip.style.display = 'none';    
+        modalEquip.style.display = 'flex';
+        
+        let modalImg = document.getElementById("item");
+        let equipImg = sigma[index][0];
+        let equipLine = sigma[index][2];
+        let equipDsc = sigma[index][3];
+        document.querySelector(".modal__infos").children[0].innerHTML = document.querySelectorAll(".complete-line__footer-title")[index].innerText;
+        document.querySelector(".modal__infos").children[1].innerHTML = equipLine;
+        document.querySelector(".modal__infos").children[2].innerHTML = equipDsc;
     
-    let modalImg = document.getElementById("item");
-    let sigmaImg = sigma[index][0];
-    let sigmaLine = sigma[index][2];
-    let sigmaDsc = sigma[index][3];
-    document.querySelector(".modal__infos").children[0].innerHTML = document.querySelectorAll(".complete-line__footer-title")[index].innerText;
-    document.querySelector(".modal__infos").children[1].innerHTML = sigmaLine;
-    document.querySelector(".modal__infos").children[2].innerHTML = sigmaDsc;
+        modalImg.setAttribute('src', equipImg)
+        let modals = modalEquip;
+        return dsModal(modals)
+    }else if (document.querySelector("#tx")) {
+        modalEquip.style.display = 'none';    
+        modalEquip.style.display = 'flex';
+        
+        let modalImg = document.getElementById("item");
+        let equipImg = tx[index][0];
+        let equipLine = tx[index][2];
+        let equipDsc = tx[index][3];
+        document.querySelector(".modal__infos").children[0].innerHTML = document.querySelectorAll(".complete-line__footer-title")[index].innerText;
+        document.querySelector(".modal__infos").children[1].innerHTML = equipLine;
+        document.querySelector(".modal__infos").children[2].innerHTML = equipDsc;
+                console.log(index)
+        modalImg.setAttribute('src', equipImg)
+        let modals = modalEquip;
+        return dsModal(modals)
+    }else if(document.querySelector("#sx")){
+        modalEquip.style.display = 'none';    
+        modalEquip.style.display = 'flex';
+        
+        let modalImg = document.getElementById("item");
+        let equipImg = sx[index][0];
+        let equipLine = sx[index][2];
+        let equipDsc = sx[index][3];
+        document.querySelector(".modal__infos").children[0].innerHTML = document.querySelectorAll(".complete-line__footer-title")[index].innerText;
+        document.querySelector(".modal__infos").children[1].innerHTML = equipLine;
+        document.querySelector(".modal__infos").children[2].innerHTML = equipDsc;
+    
+        modalImg.setAttribute('src', equipImg)
+        let modals = modalEquip;
+        return dsModal(modals)        
+    }else if(document.querySelector("#cromus")){
+        modalEquip.style.display = 'none';    
+        modalEquip.style.display = 'flex';
+        
+        let modalImg = document.getElementById("item");
+        let equipImg = cromus[index][0];
+        let equipLine = cromus[index][2];
+        let equipDsc = cromus[index][3];
+        document.querySelector(".modal__infos").children[0].innerHTML = document.querySelectorAll(".complete-line__footer-title")[index].innerText;
+        document.querySelector(".modal__infos").children[1].innerHTML = equipLine;
+        document.querySelector(".modal__infos").children[2].innerHTML = equipDsc;
 
-    modalImg.setAttribute('src', sigmaImg)
-    let modals = modalEquip;
-    console.log(sigmaLine)
+        modalImg.setAttribute('src', equipImg)
+        let modals = modalEquip;
+        return dsModal(modals)        
+    }
 
-    return dsModal(modals)
+    
 }
 //document.querySelector(".modal__infos").children[0]
 let modalEquip = document.getElementById('m01'); 
