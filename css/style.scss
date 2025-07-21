@@ -315,6 +315,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:nowrap;
     &:last-child{
         justify-content:center;
         gap:2rem;
@@ -346,7 +347,7 @@ header{
     
     @media screen and (max-width:1024px){
         justify-content:center;
-        
+        flex-wrap:wrap;
     }
 }
 .link__complete{
@@ -861,6 +862,19 @@ a{
     }
     .dsc-contato{
         flex:1 1 100%;
+    }
+    .modal{
+        &__infos{
+            padding:2rem;
+        }
+        &__img{
+            height:35vh;
+            border-radius:0;
+            #item{
+                height:35vh;
+                width:100vw;
+            }
+        }
     }
     #md-planos{
         width:100vw;

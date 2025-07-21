@@ -294,9 +294,17 @@ footer div i {
   font: 900 1.4rem "Aspira Wide", sans-serif;
   padding: 0.8rem 2rem;
   transition: all 0.25s ease-in;
+  z-index: 10;
 }
 .hero-complete-line__btn:hover {
   color: #f9ba10;
+}
+@media screen and (max-width: 1024px) {
+  .hero-complete-line__btn {
+    width: 16rem;
+    font: 900 1.2rem "Aspira Wide", sans-serif;
+    padding: 0.8rem 1.2rem;
+  }
 }
 
 .complete-line-photo {
@@ -335,6 +343,29 @@ footer div i {
   color: #252525;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero-complete-line {
+    padding: 4rem 1.2rem;
+    width: 100vw;
+    max-width: 100%;
+  }
+  .hero-complete-line__title {
+    font-size: 6.6vw;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .hero-complete-line__txt {
+    width: 60%;
+    font-size: 3.2vw;
+    line-height: 1.6rem;
+  }
+  .complete-line-photo {
+    left: 20.2vw;
+    top: 10vh;
+    width: auto;
+    height: 30rem;
+  }
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -572,6 +603,7 @@ header .menu-toggle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .line-equipment:last-child {
   justify-content: center;
@@ -640,6 +672,7 @@ header .menu-toggle {
 @media screen and (max-width: 1024px) {
   .line-equipment {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -1219,6 +1252,17 @@ a:visited {
   }
   .dsc-contato {
     flex: 1 1 100%;
+  }
+  .modal__infos {
+    padding: 2rem;
+  }
+  .modal__img {
+    height: 35vh;
+    border-radius: 0;
+  }
+  .modal__img #item {
+    height: 35vh;
+    width: 100vw;
   }
   #md-planos {
     width: 100vw;

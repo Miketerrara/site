@@ -31,13 +31,24 @@
                     <li><a href="complete-line-tx.html">Linha TX</a></li>
                     <li><a href="complete-line-cromus.html">Linha Chromus</a></li>
                 </ul>
+                
+                <i class="fi fi-br-menu-burger toggle"></i>
+                <div class="menu-toggle">
+                    <i class="fi fi-br-cross-small cross"></i>
+                    <ul class="menu-toggle__position">
+                        <a href="complete-line-sigma.html"><li class="menu-toggle__itens">Linha Sigma</li></a>
+                        <a href="complete-line-sx.html"><li class="menu-toggle__itens">Linha SX</li></a>
+                        <a href="complete-line-tx.html"><li class="menu-toggle__itens">Linha TX</li></a>
+                        <a href="complete-line-cromus.html"><li class="menu-toggle__itens">Linha Chromus</li></a>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section>
             <div class="container">
-                <a  href="all-plans.html" target="_self">
+                <a href="#" id="open-md-planos" onclick="modal(this)" target="_self">
                     <div class="hero-complete-line">                    
                         <h1 class="hero-complete-line__title">Retenha cerca de 75% mais dos seus condôminos</h1>
                         <p class="hero-complete-line__txt">Aproveite os combos para montar uma academia dentro do seu condomínio.</p>
@@ -71,7 +82,7 @@
                         </div>
                     </div>                    
                     <div class="box-equipment">
-                        <img src="./sources/maquina-cromus/Extensora-5 (1).jpg" alt="Extensora" class="box-equipment__foto">
+                        <img src="./sources/maquina-cromus/Extensora.jpg" alt="Extensora" class="box-equipment__foto">
                         <div class="complete-line__footer footer-complete-line">
                             <h4 class="complete-line__footer-title">Extensora</h4>
                             <div class="complete-line__footer-dsc">
@@ -218,6 +229,228 @@
                     <button type="button" class="modal__infos--btn">Fale com um consultor</button>
                 </a>
             </div>
+        </div>
+        <div id="md-planos">           
+            <i class="fi fi-br-cross close-md-planos"></i>
+            <table class="tb-planos">  
+                <h5 class="tb-planos__title">Standard</h5>              
+                <thead>
+                    <tr>
+                        <th class="tb-planos__th">Combos</th>
+                        <th class="tb-planos__th">Máquinas</th>
+                        <th class="tb-planos__th"></th> 
+                    </tr>                    
+                </thead>
+                <tbody class="tb-planos">
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 25m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Estação 1 usuário (90KG)</li>
+                                <li>Banco Regulável 3 em 1</li>
+                                <li>Espaldar Aço</li>
+                                <li>torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Profissional</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 50m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Suporte p/ Agachamento</li>
+                                <li>Ext.Flex. Sentada Conjugada (60Kg)</li>
+                                <li>Pulley c/ Remada (60Kg)</li>
+                                <li>Banco Supino Regulável 2 em 1</li>
+                                <li>Banco Regulável 3 em 1</li>
+                                <li>Espaldar Aço</li>
+                                <li>torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Profissional</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 80m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Abdutor (60Kg)</li>
+                                <li>Adutor (60Kg)</li>
+                                <li>Polia Alta (60Kg)</li>
+                                <li>Crossover Angular (60Kg)</li>
+                                <li>Desenvolvimento Ombro Máquina</li>
+                                <li>Extensora (60Kg)</li>
+                                <li>Flexora Deitada (60Kg)</li>
+                                <li>Leg Press Horizontal (60Kg)</li>
+                                <li>Remada Sentada Máquina (60Kg)</li>
+                                <li>Supino Verrtical Máquina (60Kg)</li>
+                                <li>Banco Regulável 3 em 1</li>
+                                <li>Espaldar Aço</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Profissional</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th class="tb-planos__th"></th>
+                        <th colspan="3" class="tb-planos__title">Premium</th>
+                        <th class="tb-planos__th"></th> 
+                    </tr>                    
+                </thead>
+                <tbody class="tb-planos">
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 25m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Cross. Angular c/ Smith (100Kg) c/ contra peso</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Spinning (Sistema de Correia)</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 50m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Suporte p/ Agachamento</li>
+                                <li>Ext.Flex. Sentada Conjugada (100Kg) c/ Rapid Fire</li>
+                                <li>Pulley c/ Remada (100Kg)</li>
+                                <li>Banco Supino Regulável</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 80m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Abdutor (80Kg)</li>
+                                <li>Adutor (80Kg)</li>
+                                <li>Polia Alta (100Kg)</li>
+                                <li>Crossover Angular (100Kg)</li>
+                                <li>Desenvolvimento Ombro Máquina (100Kg)</li>
+                                <li>Extensora (100Kg) c/ Rapid Fire</li>
+                                <li>Flexora Deitada (100Kg)</li>
+                                <li>Leg Press Horizontal (100Kg)</li>
+                                <li>Remada Sentada Máquina (100Kg)</li>
+                                <li>Supino Vertical Máquina (100Kg)</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (s/ inclinação) - 220v</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th class="tb-planos__th"></th>
+                        <th class="tb-planos__title">Platinum</th>
+                        <th class="tb-planos__th"></th> 
+                    </tr>                    
+                </thead>
+                <tbody class="tb-planos">
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 25m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Cross. Angular c/ Smith (100Kg)</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (c/ inclinação)</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 50m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Suporte p/ Agachamento</li>
+                                <li>Extensora c/ Flexora Sentada (100Kg)</li>
+                                <li>Polia superior e inferior (100Kg)</li>
+                                <li>Banco Supino Regulável</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (c/ inclinação)</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tb-planos__td tb-planos__td--th">Basic 80m²</td>
+                        <td class="tb-planos__td">
+                            <ul>
+                                <li>Abdutor (80Kg)</li>
+                                <li>Adutor (80Kg)</li>
+                                <li>Polia Superior (100Kg)</li>
+                                <li>Crossover Angular (100Kg)</li>
+                                <li>Desenvolvimento Unilateral (80Kg)</li>
+                                <li>Extensora (100Kg)</li>
+                                <li>Flexora Sentado (100Kg)</li>
+                                <li>Leg Press Horizontal Sentado (100Kg)</li>
+                                <li>Remada Unilateral (80Kg)</li>
+                                <li>Supino Vertical (80Kg)</li>
+                                <li>Banco regulável 0 - 90</li>
+                                <li>Espaldar simples</li>
+                                <li>Torre halter 1 a 10</li>
+                                <li>Esteira Profissional (c/ inclinação)</li>
+                                <li>Bike Vertical Eletromagnética</li>
+                                <li>ANILHA</li>
+                            </ul>
+                        </td>
+                        <td class="tb-planos__td">
+                            <button type="button" class="tb-planos__td--btn">Consultar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
     <footer>
